@@ -74,7 +74,7 @@
                     <li class="header">MENU</li>
                     <!-- Optionally, you can add icons to the links -->
                     <li><a href="{{route('Dashboard')}}"><i class="fa fa-link"></i> <span>Inicio</span></a></li>
-                    <li><a href="#"><i class="fa fa-link"></i> <span>Pokemons</span></a></li>
+                    <li><a href="/pokemons"><i class="fa fa-link"></i> <span>Pokemons</span></a></li>
                 </ul>
                 <!-- /.sidebar-menu -->
             </section>
@@ -86,7 +86,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    {{Route::currentRouteName()}}
+                    @yield('routename')
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
